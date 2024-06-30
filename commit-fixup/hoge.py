@@ -5,8 +5,8 @@ def hello_world(name: str):
     print(f"Hello, {name}!")
 
 
-def goodbye_world():
-    print("Goodbye, world!")
+def goodbye_world(name: str):
+    print(f"Goodbye, {name}!")
 
 
 def main():
@@ -15,7 +15,7 @@ def main():
         name = sys.argv[1]
     
     hello_world(name)
-    goodbye_world()
+    goodbye_world(name)
 
 
 if __name__ == "__main__":
