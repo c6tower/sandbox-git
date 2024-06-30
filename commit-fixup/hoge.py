@@ -10,9 +10,10 @@ def goodbye_world(name: str):
 
 
 def main():
+    name = "world"
     if len(sys.argv) < 1:
         print("Usage: python hoge.py [name]")
-        name = "world"
+        raise SystemExit(1)
     else:
         name = sys.argv[1]
 
