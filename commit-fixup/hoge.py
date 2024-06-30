@@ -1,5 +1,8 @@
-def hello_world():
-    print("Hello, world!")
+import sys
+
+
+def hello_world(name: str):
+    print(f"Hello, {name}!")
 
 
 def goodbye_world():
@@ -7,7 +10,11 @@ def goodbye_world():
 
 
 def main():
-    hello_world()
+    name = "world"
+    if len(sys.argv) > 1:
+        name = sys.argv[1]
+    
+    hello_world(name)
     goodbye_world()
 
 
